@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Just for fun">
+	<meta name="author" content="hwencc">
+	<title>ATP Some</title>
+	<style>
+		html { font-size: 14px; }
+		body {
+			font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+			background: url(img/sand_white_bg.jpg) repeat;
+			margin: 8px;
+			color: #35495E;
+		}
+		.list-item {
+			padding: 1rem;
+			margin: 1rem auto;
+			height: 3rem;
+			background-color: white;
+			border-radius: 4px;
+			position: relative;
+		}
+		.head-info {
+			display: inline-block;
+			color: white;
+			background-color: #3FB080;
+			height: 3rem;
+			width: 3rem;
+			line-height: 3rem;
+			border-radius: 1.5rem;
+			font-size: 1.5rem;
+			text-align: center;
+			font-weight: bold;
+			vertical-align: middle;
+		}
+		.detail-box {
+		    display: inline-block;
+		    padding-left: 0;
+		    margin: 0;
+		    position: absolute;
+		    list-style: none;
+		    height: 100%;
+		    right: 1rem;
+		}
+		.list-item .player {
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<router-view></router-view>
+	</div>
+	<center>power by @hwencc</center>
+	<script src="main.js"></script>
+</body>
+</html>
