@@ -20,3 +20,7 @@ node server
 ##live demo
 用微信扫一扫后，即可查看      
 ![wechat qrcode](https://github.com/hwen/ATPSome/blob/master/src/asserts/img/qrcode.jpg)
+
+##License
+
+The MIT license
