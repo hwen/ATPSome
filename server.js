@@ -8,7 +8,6 @@ var path            = require("path");
 var routes          = require("./routes");
 var config          = require("./config");
 var session 		= require("express-session");
-var connect 		= require("connect");
 var cookieParser 	= require('cookie-parser');
 
 
@@ -20,7 +19,7 @@ app.use(logger('combined', {stream: fs.createWriteStream('./access.log', {flags:
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
-app.use(connect.session({secret: config.secret,cookie: {maxAge: 60000}}));
+app.use(session({secret: config.secret,cookie: {maxAge: 60000}}));
 app.use(express.static('dist'));
 app.use(express.static('./src/asserts'))
 
