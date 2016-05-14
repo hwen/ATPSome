@@ -20,7 +20,7 @@ app.use(logger('combined', {stream: fs.createWriteStream('./access.log', {flags:
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
-app.use(connect.session({secret: 'anrancc',cookie: {maxAge: 60000}}));
+app.use(connect.session({secret: config.secret,cookie: {maxAge: 60000}}));
 app.use(express.static('dist'));
 app.use(express.static('./src/asserts'))
 
